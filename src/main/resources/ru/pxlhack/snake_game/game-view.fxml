@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="menuPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pxlhack.snake_game.GameController">
+    <effect>
+        <GaussianBlur radius="0" />
+    </effect>
+
+
+    <AnchorPane fx:id="gameBoxPane" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    </AnchorPane>
+
+    <AnchorPane layoutX="400.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+        <Label fx:id="scoreLabel" layoutX="59.0" layoutY="35.0" prefHeight="86.0" prefWidth="181.0" style="-fx-text-fill: WHITE">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+        <Button fx:id="startGameBtn" focusTraversable="false" layoutX="89.0" layoutY="175.0" mnemonicParsing="false" onAction="#startGameBtnOnClick" prefHeight="70.0" prefWidth="121.0" text="Start">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+
+        <Button fx:id="stopGameBtn" disable="true" focusTraversable="false" layoutX="89.0" layoutY="275.0" mnemonicParsing="false" onAction="#stopGameBtnOnClick" prefHeight="70.0" prefWidth="121.0" text="Stop">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+
+    </AnchorPane>
+
+
+</AnchorPane>
